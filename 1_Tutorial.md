@@ -1,5 +1,8 @@
 
 <!--
+https://uviclibraries.github.io/rstudio/basics-interface.html
+https://stat133.berkeley.edu/spring-2024/slides/stat133-00-intro2-RStudio.pdf
+https://hbctraining.github.io/main/
 https://ourcodingclub.github.io/tutorials/intro-to-r/#download
 https://www.css.cornell.edu/faculty/dgr2/_static/files/R_PDF/mhw.pdf
 https://rstudio-education.github.io/hopr/updating.html
