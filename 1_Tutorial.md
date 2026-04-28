@@ -1,5 +1,8 @@
 
 <!--
+https://ourcodingclub.github.io/tutorials/intro-to-r/#download
+https://www.css.cornell.edu/faculty/dgr2/_static/files/R_PDF/mhw.pdf
+https://rstudio-education.github.io/hopr/updating.html
 https://thinking-spatial.org/courses/angewandte_geodatenverarbeitung/kurs01/
 https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html
 https://posit.cloud/content/12373562
