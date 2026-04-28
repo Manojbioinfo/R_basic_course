@@ -1,5 +1,6 @@
 
 <!--
+https://learn.scds.ca/intro-r/introduction.html
 https://uviclibraries.github.io/rstudio/basics-interface.html
 https://stat133.berkeley.edu/spring-2024/slides/stat133-00-intro2-RStudio.pdf
 https://hbctraining.github.io/main/
