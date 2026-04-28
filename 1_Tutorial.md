@@ -1,5 +1,6 @@
 
 <!--
+https://thinking-spatial.org/courses/angewandte_geodatenverarbeitung/kurs01/
 https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html
 https://posit.cloud/content/12373562
 https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/
