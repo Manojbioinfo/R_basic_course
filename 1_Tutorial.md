@@ -1,5 +1,6 @@
 
 <!--
+https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html
 https://posit.cloud/content/12373562
 https://statsandr.com/blog/correlation-coefficient-and-correlation-test-in-r/
 https://www.oer.psy.lmu.de/R_Tutorial/Teil2_translated.html#workflow-for-importing-datasets
@@ -9,4 +10,8 @@ https://intro2r.com/data-types.html
 https://researchguides.library.wisc.edu/R/basics
 https://www.hec.usace.army.mil/confluence/sspdocs/ssptutorialsguides/r-based-statistics-tutorials/a-very-brief-introduction-to-the-r-programming-language/introduction-to-r
 https://cmu-lib.github.io/os-workshops/reproducible-research/Introduction%20to%20R.pdf
+https://statisticsglobe.com/graphics-in-r
+https://sahirbhatnagar.com/EPIB607/index.html
+https://sahirbhatnagar.com/EPIB607/basics.html
+https://datascienceineducation.com/#purchasing-the-book
 -->
