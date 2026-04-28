@@ -26,3 +26,4 @@ https://datascienceineducation.com/#purchasing-the-book
 https://git.uni-due.de/somanaja/data-science-in-education/-/blob/v1.0/01-introduction.Rmd?ref_type=tags#c06
 https://github.com/data-edu/data-science-in-education/blob/main/DESCRIPTION
 -->
+[Log in](https://login.posit.cloud/login)
