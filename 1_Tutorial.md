@@ -26,4 +26,13 @@ https://datascienceineducation.com/#purchasing-the-book
 https://git.uni-due.de/somanaja/data-science-in-education/-/blob/v1.0/01-introduction.Rmd?ref_type=tags#c06
 https://github.com/data-edu/data-science-in-education/blob/main/DESCRIPTION
 -->
-[Log in](https://login.posit.cloud/login)
+
+### Step 1: Log in to Posit Cloud
+
+To get started with R, first access Posit Cloud:
+
+👉 [Log in to Posit Cloud](https://login.posit.cloud/login)
+
+Use your account credentials to sign in. If you don’t have an account yet, you can create one on the same page.
+
+Once logged in, you’ll be ready to create and run R projects directly in your browser.
