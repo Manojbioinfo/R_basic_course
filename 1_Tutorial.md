@@ -15,4 +15,5 @@ https://sahirbhatnagar.com/EPIB607/index.html
 https://sahirbhatnagar.com/EPIB607/basics.html
 https://datascienceineducation.com/#purchasing-the-book
 https://git.uni-due.de/somanaja/data-science-in-education/-/blob/v1.0/01-introduction.Rmd?ref_type=tags#c06
+https://github.com/data-edu/data-science-in-education/blob/main/DESCRIPTION
 -->
