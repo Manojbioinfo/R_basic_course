@@ -1,3 +1,11 @@
+# In your R Markdown YAML header:
+---
+title: "R Basics Tutorial"
+bibliography: Ref.bib
+---
+
+
+
 # Introduction
 
 # Step 1: Log in to Posit Cloud
