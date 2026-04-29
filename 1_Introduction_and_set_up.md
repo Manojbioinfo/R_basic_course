@@ -1,26 +1,19 @@
----
-title: "R Basics for Medical Research"
-author: "Your Name"
-date: "`r Sys.Date()`"
-bibliography: Ref.bib
-output:
-  html_document:
-    toc: true
-    toc_float: true
----
+# R Basics for Medical Research
 
-# Introduction
+## Introduction
 
 This tutorial introduces R programming basics specifically tailored for medical research. We'll cover essential concepts using Posit Cloud and RStudio, following best practices from established R education resources [@Sanchez2024_RIntro].
 
-## Learning Objectives
+### Learning Objectives
+
 By the end of this tutorial, you will be able to:
+
 - Navigate the Posit Cloud interface
 - Understand basic R syntax
 - Perform simple data analysis
 - Create basic visualizations
 
-# Step 1: Log in to Posit Cloud
+## Step 1: Log in to Posit Cloud
 
 To get started with R, first access Posit Cloud:
 
@@ -35,9 +28,9 @@ To get started with R, first access Posit Cloud:
 
 Once logged in, you'll be ready to create and run R projects directly in your browser.
 
-# Setup
+## Setup
 
-## R {#r-section}
+### R {#r-section}
 
 R is a powerful programming language for statistical computing and graphics [@Sanchez2024_RIntro]. Key features include:
 
@@ -46,7 +39,7 @@ R is a powerful programming language for statistical computing and graphics [@Sa
 - Strong community support
 - Excellent data visualization capabilities
 
-## RStudio {#rstudio-section}
+### RStudio {#rstudio-section}
 
 RStudio is an integrated development environment (IDE) that makes working with R easier [@Sanchez2024_RIntro]. The interface includes:
 
@@ -66,3 +59,9 @@ patient_count <- 100
 
 # View the variable
 patient_count
+
+# Create a vector of patient ages
+patient_ages <- c(25, 30, 35, 40, 45)
+
+# Calculate mean age
+mean(patient_ages)
