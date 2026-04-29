@@ -13,6 +13,9 @@ By the end of this tutorial, you will be able to:
 - Perform simple data analysis
 - Create basic visualizations
 
+![Image](Image/Fig1.png)
+
+
 ## Log in to Posit Cloud
 
 To get started with R, first access Posit Cloud:
@@ -39,7 +42,7 @@ R is a powerful programming language for statistical computing and graphics [@Sa
 
 ## RStudio
 
-![RStudio interface showing the four main panels](Image/Fig1.png)
+![RStudio interface showing the four main panels](Image/Fig2.png)
 ***Figure 1.** RStudio interface demonstrating the four main working panels: Source Editor, Console, Environment/History, and Files/Plots/Packages/Help (adapted from [1]).*
 
 
