@@ -13,7 +13,7 @@ By the end of this tutorial, you will be able to:
 - Perform simple data analysis
 - Create basic visualizations
 
-## Step 1: Log in to Posit Cloud
+## Log in to Posit Cloud
 
 To get started with R, first access Posit Cloud:
 
@@ -27,8 +27,6 @@ To get started with R, first access Posit Cloud:
 3. After logging in, click "New Project" → "New RStudio Project"
 
 Once logged in, you'll be ready to create and run R projects directly in your browser.
-
-## Setup
 
 ## R 
 
