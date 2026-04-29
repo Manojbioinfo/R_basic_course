@@ -1,4 +1,4 @@
-
+https://stat133.berkeley.edu/spring-2024/
 
 https://www.andywills.info/rminr/#beginners
 
