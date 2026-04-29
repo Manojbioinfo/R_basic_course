@@ -48,6 +48,24 @@ R is a powerful programming language for statistical computing and graphics [@Sa
 RStudio is an integrated development environment (IDE) that makes working with R easier [@Sanchez2024_RIntro]. The interface includes:
 
 1. **Source Editor**: For writing and editing scripts
+
+✔ Primary workspace for source documents
+✔ Supports multiple file types:
+
+    R scripts (.R)
+    R Markdown (.Rmd)
+    Quarto documents (.qmd)
+    Text files (.txt)
+    Other syntax files (LaTeX, HTML, etc.)
+
+✔ Key Features:
+
+    Syntax highlighting for different languages
+    Code completion and error checking
+    Version control integration
+    Multiple tabs for simultaneous editing
+
+
 2. **Console**: For executing commands and viewing output
 3. **Environment/History**: For viewing variables and command history
 4. **Files/Plots/Packages/Help**: For managing files, viewing plots, and accessing documentation
