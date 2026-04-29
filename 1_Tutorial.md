@@ -39,12 +39,9 @@ Once logged in, you’ll be ready to create and run R projects directly in your 
 
 
 
-Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`) file that you can copy directly:
-
-```markdown
 # R Basics for Medical Research: Tutorial Outline
 
-```markdown
+
 ## 1. Introduction & Setup
 - Explain the tutorial's purpose: "Learn R basics for medical research analysis"
 - List prerequisites:
@@ -55,9 +52,9 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
   1. Visit https://posit.cloud/
   2. Enter credentials
   3. Create new RStudio project
-```
 
-```markdown
+
+
 ## 2. Navigating the RStudio Interface
 - Describe the four main panels:
   - Console (bottom-left): Immediate command execution
@@ -67,9 +64,9 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
 - Show how to:
   1. Create new script: File → New File → R Script
   2. Save script: Ctrl+S (Windows) or Cmd+S (Mac)
-```
 
-```markdown
+
+
 ## 3. Running Basic R Commands
 - Demonstrate simple operations:
   - Calculations: `2 + 2`
@@ -77,9 +74,9 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
 - Explain execution methods:
   - Console: Immediate results (press Enter)
   - Script: Run selected lines (Ctrl+Enter) or entire script (Ctrl+Shift+Enter)
-```
 
-```markdown
+
+
 ## 4. Working with Variables & Data
 - Show variable assignment:
   ```r
@@ -95,9 +92,9 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
   print(patient_age)
   class(patient_bmi)
   ```
-```
 
-```markdown
+
+
 ## 5. Importing & Exploring Data
 - Guide to upload CSV:
   1. Click "Upload" in Files panel
@@ -113,9 +110,9 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
   summary(medical_data) # Statistical summary
   str(medical_data)     # Data structure
   ```
-```
 
-```markdown
+
+
 ## 6. Basic Data Analysis
 - Show calculations:
   ```r
@@ -133,10 +130,8 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
        main = "Age vs Blood Pressure",
        xlab = "Age (years)",
        ylab = "Blood Pressure (mmHg)")
-  ```
-```
 
-```markdown
+
 ## 7. Saving & Exporting Work
 - Save scripts:
   - File → Save (or Ctrl+S/Cmd+S)
@@ -150,9 +145,9 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
   ```r
   rm(list = ls())
   ```
-```
 
-```markdown
+
+
 ## 8. Conclusion & Next Steps
 - Recap key learnings:
   - RStudio interface navigation
@@ -167,15 +162,5 @@ Here's your tutorial outline formatted as a clean, ready-to-use Markdown (`.md`)
   - [R for Data Science](https://r4ds.had.co.nz/)
   - [RStudio Cheat Sheets](https://www.rstudio.com/resources/cheatsheets/)
   - [Posit Cloud Documentation](https://docs.posit.co/)
-```
-```
 
-### Key Features:
-1. **Pure Markdown format** - Ready to copy into any `.md` file
-2. **Clear section numbering** - Matches your original outline
-3. **Code blocks** - For all R-related content
-4. **Bullet points** - For easy-to-follow instructions
-5. **Medical focus** - All examples use healthcare data
-6. **Consistent structure** - Each section follows the same pattern
 
-You can paste this directly into a Markdown file and it will maintain all formatting. The file is organized exactly according to your requested outline.
