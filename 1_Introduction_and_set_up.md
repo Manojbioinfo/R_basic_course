@@ -45,7 +45,7 @@ R is a powerful programming language for statistical computing and graphics [@Sa
 ***Figure 1.** RStudio interface demonstrating the four main working panels: Source Editor, Console, Environment/History, and Files/Plots/Packages/Help (adapted from [1]).*
 
 
-RStudio is an integrated development environment (IDE) that makes working with R easier [@Sanchez2024_RIntro]. The interface includes:
+RStudio is an integrated development environment (IDE) that makes working with R easier [1]. The interface includes:
 
 1. **Source Editor**: For writing and editing scripts
 2. **Console**: For executing commands and viewing output
