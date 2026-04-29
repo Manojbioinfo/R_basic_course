@@ -14,20 +14,19 @@ By the end of this tutorial, you will be able to:
 - Create basic visualizations
 
 ![RStudio interface showing the four main panels](Image/Fig1.png)
-**Figure 1. **Co-occurrence network of R programming applications in biomedical research (2000-2026). This VOSviewer visualization (v1.6.19) maps 200 high-frequency terms from 15,342 PubMed-indexed articles (PMIDs) mentioning "R" in methods/analysis sections. Network elements:
+**Figure 1.** Co-occurrence network of R programming applications in biomedical research (2000-2026). This VOSviewer visualization (v1.6.19) maps 200 high-frequency terms from 15,342 PubMed-indexed articles (PMIDs) mentioning "R" in methods/analysis sections.
 
-    Nodes (n=200): MeSH terms/keywords (≥25 occurrences)
-        Size: Term frequency (log scale)
-        Color: Temporal trend (blue=2000-2010, green=2011-2018, yellow=2019-2026)
-    Edges (n=8,765): Co-occurrence strength (≥10 shared articles)
+**Key research clusters:**
 
-Key research clusters:
+**Biostatistics Core (blue):** Statistical models, Survival analysis, Clinical trials
+    
+**Bioinformatics (green):** Genomics, Microarray analysis, Bioconductor packages
+    
+**Epidemiology (yellow):** Risk factors, Public health, Spatial analysis
 
-    Biostatistics Core (blue): Statistical models, Survival analysis, Clinical trials
-    Bioinformatics (green): Genomics, Microarray analysis, Bioconductor packages
-    Epidemiology (yellow): Risk factors, Public health, Spatial analysis
-    Machine Learning (orange): Random forest, Neural networks, Data mining
-    Visualization (red): ggplot2, Reproducible research, Data visualization
+**Machine Learning (orange):** Random forest, Neural networks, Data mining 
+
+**Visualization (red):** ggplot2, Reproducible research, Data visualization
 
 
 
