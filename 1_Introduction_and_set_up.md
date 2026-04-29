@@ -41,6 +41,10 @@ R is a powerful programming language for statistical computing and graphics [@Sa
 
 ### RStudio {#rstudio-section}
 
+![RStudio interface showing the four main panels](Image/Fig1.png)
+***Figure 1.** RStudio interface demonstrating the four main working panels: Source Editor, Console, Environment/History, and Files/Plots/Packages/Help (adapted from [1]).*
+
+
 RStudio is an integrated development environment (IDE) that makes working with R easier [@Sanchez2024_RIntro]. The interface includes:
 
 1. **Source Editor**: For writing and editing scripts
@@ -50,18 +54,7 @@ RStudio is an integrated development environment (IDE) that makes working with R
 
 ## First Steps in RStudio
 
-```r
-# Check R version
-R.version.string
+## References
 
-# Create your first variable
-patient_count <- 100
+1. Sanchez G. Getting started with R and RStudio [Internet]. Berkeley (CA): University of California, Berkeley; 2024 [cited 2024 Jan 1]. (STAT 133). Available from: https://stat133.berkeley.edu/spring-2024/slides/stat133-00-intro2-RStudio.pdf [Creative Commons Attribution Share-Alike 4.0 International CC BY-SA]
 
-# View the variable
-patient_count
-
-# Create a vector of patient ages
-patient_ages <- c(25, 30, 35, 40, 45)
-
-# Calculate mean age
-mean(patient_ages)
