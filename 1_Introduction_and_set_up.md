@@ -56,5 +56,6 @@ RStudio is an integrated development environment (IDE) that makes working with R
 
 ## References
 
-1. Sanchez G. Getting started with R and RStudio [Internet]. Berkeley (CA): University of California, Berkeley; 2024 [cited 2024 Jan 1]. (STAT 133). Available from: https://stat133.berkeley.edu/spring-2024/slides/stat133-00-intro2-RStudio.pdf [Creative Commons Attribution Share-Alike 4.0 International CC BY-SA]
+1. Sanchez G. Getting started with R and RStudio [Internet]. Berkeley (CA): University of California, Berkeley, Department of Statistics; 2024 [cited 2024 Jan 1]. (STAT 133: Concepts in Computing with Data). Available from: https://stat133.berkeley.edu/spring-2024/slides/stat133-00-intro2-RStudio.pdf. Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)
+
 
