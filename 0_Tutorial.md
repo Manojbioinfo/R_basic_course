@@ -30,16 +30,6 @@ https://mantra.ed.ac.uk/practicals/R_tutorial_ex1.html
 https://www.simonqueenborough.info/R/best-practice/index.html
 -->
 
-### Step 1: Log in to Posit Cloud
-
-To get started with R, first access Posit Cloud:
-
-👉 [Log in to Posit Cloud](https://login.posit.cloud/login)
-
-Use your account credentials to sign in. If you don’t have an account yet, you can create one on the same page.
-
-Once logged in, you’ll be ready to create and run R projects directly in your browser.
-
 
 
 # R Basics for Medical Research: Tutorial Outline
