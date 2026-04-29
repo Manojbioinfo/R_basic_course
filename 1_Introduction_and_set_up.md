@@ -16,3 +16,5 @@ Once logged in, you’ll be ready to create and run R projects directly in your 
 # R 
 
 # R Studio
+
+[@Sanchez2024_RIntro]
