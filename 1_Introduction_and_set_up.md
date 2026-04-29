@@ -30,7 +30,7 @@ Once logged in, you'll be ready to create and run R projects directly in your br
 
 ## Setup
 
-### R {#r-section}
+## R 
 
 R is a powerful programming language for statistical computing and graphics [@Sanchez2024_RIntro]. Key features include:
 
@@ -39,7 +39,7 @@ R is a powerful programming language for statistical computing and graphics [@Sa
 - Strong community support
 - Excellent data visualization capabilities
 
-### RStudio {#rstudio-section}
+## RStudio
 
 ![RStudio interface showing the four main panels](Image/Fig1.png)
 ***Figure 1.** RStudio interface demonstrating the four main working panels: Source Editor, Console, Environment/History, and Files/Plots/Packages/Help (adapted from [1]).*
