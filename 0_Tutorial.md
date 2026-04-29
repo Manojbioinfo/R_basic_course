@@ -25,6 +25,9 @@ https://sahirbhatnagar.com/EPIB607/basics.html
 https://datascienceineducation.com/#purchasing-the-book
 https://git.uni-due.de/somanaja/data-science-in-education/-/blob/v1.0/01-introduction.Rmd?ref_type=tags#c06
 https://github.com/data-edu/data-science-in-education/blob/main/DESCRIPTION
+https://bioinformatics.ccr.cancer.gov/docs/r_for_novices/Getting_Started_with_R/Lesson1/
+https://mantra.ed.ac.uk/practicals/R_tutorial_ex1.html
+https://www.simonqueenborough.info/R/best-practice/index.html
 -->
 
 ### Step 1: Log in to Posit Cloud
