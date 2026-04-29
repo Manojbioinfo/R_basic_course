@@ -13,7 +13,9 @@ By the end of this tutorial, you will be able to:
 - Perform simple data analysis
 - Create basic visualizations
 
-![Image](Image/Fig1.png)
+![RStudio interface showing the four main panels](Image/Fig1.png)
+***Figure 1.** RStudio interface demonstrating the four main working panels: Source Editor, Console, Environment/History, and Files/Plots/Packages/Help (adapted from [1]).*
+
 
 
 ## Log in to Posit Cloud
