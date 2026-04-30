@@ -1,3 +1,5 @@
+https://docs.posit.co/ide/user/ide/guide/code/execution.html
+
 https://stat133.berkeley.edu/spring-2024/
 
 https://www.andywills.info/rminr/#beginners
