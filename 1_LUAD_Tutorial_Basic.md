@@ -81,18 +81,16 @@ The “conflicts” message indicates that some functions (such as `filter()` an
 Data <- read.csv("LUAD_clean_data_all_patients.csv")
 ```
 
-
-
+---
+## 🔍 Preview of the Dataset
 
 ```r
-# Inspect data
+# View first few rows of the dataset
 head(Data)
-str(Data)
-summary(Data)
 ```
 
+**Output:**  
 ```
-> head(Data)
             ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group
 1 TCGA-55-A48X  63 Female European        Alive        Stage IIA          1.9726027     Young
 2 TCGA-NJ-A55R  67   Male European        Alive         Stage IA          0.2739726       Old
@@ -102,15 +100,18 @@ summary(Data)
 6 TCGA-55-6982  79 Female European         Dead        Stage IIB          0.0000000       Old
 ```
 
+**Interpretation:**  
+The `head()` function displays the first six observations of the dataset, providing a quick overview of the data structure and values.  
 
+From this preview, we can confirm that:
+- The variables are properly organized and readable  
+- Both numerical and categorical data are present  
+- There appear to be **duplicate entries** (e.g., ID *TCGA-44-6777* appears twice), which may require further data cleaning  
 
-
-
-Nice — now you can present this much more professionally in your report like this ✅
+This step helps verify data quality before proceeding with analysis.
 
 ---
 
-:::writing block
 ## 🔍 Inspecting the Dataset Structure
 
 ```r
