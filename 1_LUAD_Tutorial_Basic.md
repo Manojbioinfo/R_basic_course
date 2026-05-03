@@ -275,9 +275,10 @@ hist(Data$Age,
 ```r
 # Histogram of Cigarettes per day
 hist(Data$Cigarettes_per_day,
-     col = "darkred",
-     main = "Age Distribution",
-     xlab = "Age")
+     col = "tomato",
+     main = "Cigarettes_per_day Distribution",
+     xlab = "Cigarettes_per_day")
+
 ```
 
 <img src="images/LUAD_Pic2.jpg" alt="Plot" width="60%">
@@ -287,7 +288,9 @@ hist(Data$Cigarettes_per_day,
 barplot(table(Data$Gender),
         col = "pink",
         main = "Gender Distribution")
+```
 
+```r
 barplot(table(Data$Tumor_Stage),
         col = "lightgreen",
         main = "Tumor Stage Distribution")
