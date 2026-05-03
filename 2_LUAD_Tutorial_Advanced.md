@@ -40,6 +40,11 @@ Helps confirm correct data loading and detect any obvious issues.
 str(Data)
 ```
 
+```
+
+```
+
+
 **Interpretation:**  
 Shows the structure of the dataset, including variable types and number of observations.  
 Reveals that categorical variables are stored as character and may require conversion to factors.
@@ -64,6 +69,11 @@ This extracts only female patients from the dataset for subgroup analysis.
 head(female_data)
 ```
 
+```
+
+```
+
+
 **Interpretation:**  
 Displays the first few rows of the female-only dataset to verify successful filtering.
 
@@ -72,6 +82,11 @@ Displays the first few rows of the female-only dataset to verify successful filt
 ```r
 str(female_data)
 ```
+
+```
+
+```
+
 
 **Interpretation:**  
 Shows the structure of the filtered dataset and allows comparison with the full dataset.  
@@ -84,6 +99,11 @@ This helps identify differences in sample size and confirms that variables remai
 ```r
 sorted_data <- Data %>%
   arrange(Age)
+head(sorted_data)
+```
+
+```
+
 ```
 
 **Interpretation:**  
