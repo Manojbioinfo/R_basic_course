@@ -314,12 +314,14 @@ plot(Data$Age, Data$Smoking,
      ylab = "Cigarettes per Day",
      main = "Age vs Smoking")
 ```
+<img src="images/LUAD_Pic5.jpg" alt="Plot" width="60%">
+
 
 ```r
 # Regression line
 abline(lm(Smoking ~ Age, data = Data), col = "red")
 ```
-
+<img src="images/LUAD_Pic6.jpg" alt="Plot" width="60%">
 **Interpretation:** 
 
 This explores the relationship between age and smoking behavior, helping identify trends.
