@@ -290,13 +290,17 @@ barplot(table(Data$Gender),
         main = "Gender Distribution")
 ```
 
+<img src="images/LUAD_Pic3.jpg" alt="Plot" width="60%">
+
 ```r
 barplot(table(Data$Tumor_Stage),
         col = "lightgreen",
         main = "Tumor Stage Distribution")
 ```
+<img src="images/LUAD_Pic4.jpg" alt="Plot" width="60%">
 
 **Interpretation:**  
+
 Visualizations provide an intuitive understanding of data patterns and distributions.
 
 ---
@@ -316,7 +320,8 @@ plot(Data$Age, Data$Smoking,
 abline(lm(Smoking ~ Age, data = Data), col = "red")
 ```
 
-**Interpretation:**  
+**Interpretation:** 
+
 This explores the relationship between age and smoking behavior, helping identify trends.
 
 ---
