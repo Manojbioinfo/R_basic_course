@@ -269,7 +269,7 @@ hist(Data$Age,
      main = "Age Distribution",
      xlab = "Age")
 ```
-
+![Plot](images/LUAD_Pic1.jpg)
 
 ```r
 # Histogram of Cigarettes per day
@@ -278,6 +278,7 @@ hist(Data$Cigarettes_per_day,
      main = "Age Distribution",
      xlab = "Age")
 ```
+![Plot](images/LUAD_Pic2.jpg)
 
 
 
