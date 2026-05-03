@@ -4,7 +4,7 @@
 ---
 
 ## 📌 1. Load Library
-
+**Write the code in the Editor:**  
 ```r
 library(dplyr)
 ```
@@ -12,7 +12,7 @@ library(dplyr)
 ---
 
 ## 📂 2. Load Dataset
-
+**Write the code in the Editor:**  
 ```r
 Data <- read.csv("LUAD_clean_data_all_patients.csv")
 ```
@@ -20,11 +20,11 @@ Data <- read.csv("LUAD_clean_data_all_patients.csv")
 ---
 
 ## 🔍 3. Explore Dataset
-
+**Write the code in the Editor:**  
 ```r
 head(Data)
 ```
-
+**Output:**   
 ```
            ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group
 1 TCGA-55-A48X  63 Female European        Alive        Stage IIA          1.9726027     Young
@@ -41,11 +41,11 @@ Displays the first few rows of the dataset to understand variable layout and sam
 Helps confirm correct data loading and detect any obvious issues.
 
 ---
-
+**Write the code in the Editor:**  
 ```r
 str(Data)
 ```
-
+**Output:**   
 ```
 'data.frame':	445 obs. of  8 variables:
  $ ID                : chr  "TCGA-55-A48X" "TCGA-NJ-A55R" "TCGA-53-A4EZ" "TCGA-44-6777" ...
@@ -66,7 +66,7 @@ Reveals that categorical variables are stored as character and may require conve
 ---
 
 ## 🔍 4. Filter Data (Only Female Patients)
-
+**Write the code in the Editor:**  
 ```r
 female_data <- Data %>%
   filter(Gender == "Female")
@@ -78,11 +78,11 @@ This extracts only female patients from the dataset for subgroup analysis.
 ---
 
 ## 🔍 5. Explore Female Dataset
-
+**Write the code in the Editor:**  
 ```r
 head(female_data)
 ```
-
+**Output:**   
 ```
             ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group
 1 TCGA-55-A48X  63 Female European        Alive        Stage IIA           1.972603     Young
@@ -98,11 +98,11 @@ head(female_data)
 Displays the first few rows of the female-only dataset to verify successful filtering.
 
 ---
-
+**Write the code in the Editor:**  
 ```r
 str(female_data)
 ```
-
+**Output:**   
 ```
 'data.frame':	247 obs. of  8 variables:
  $ ID                : chr  "TCGA-55-A48X" "TCGA-44-6777" "TCGA-55-6982" "TCGA-50-6595" ...
@@ -123,13 +123,13 @@ This helps identify differences in sample size and confirms that variables remai
 ---
 
 ## 🔢 6. Arrange Data (Sort by Age)
-
+**Write the code in the Editor:**  
 ```r
 sorted_data <- Data %>%
   arrange(Age)
 head(sorted_data)
 ```
-
+**Output:**   
 ```
             ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group
 1 TCGA-44-3917  33 Female European        Alive         Stage IB          0.8767123     Young
@@ -147,15 +147,16 @@ Sorts the dataset in ascending order of age, making it easier to identify younge
 ---
 
 ## 🎯 7. Select Specific Columns
-
+**Write the code in the Editor:**  
 ```r
 selected_data <- Data %>%
   select(Age, Gender, Pathologic_stage)
 ```
+
 ```r
 head(selected_data )
 ```
-
+**Output:**   
 ```
  Age Gender Pathologic_stage
 1  63 Female        Stage IIA
@@ -172,12 +173,13 @@ Keeps only relevant variables for focused analysis and reduces dataset complexit
 ---
 
 ## ➕ 8. Create New Variable (Mutate)
-
+**Write the code in the Editor:**  
 ```r
 Data <- Data %>%
   mutate(Age_Group2 = ifelse(Age > 60, "Older", "Younger"))
 head(Data)
 ```
+**Output:**   
 ```
             ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group Age_Group2
 1 TCGA-55-A48X  63 Female European        Alive        Stage IIA          1.9726027     Young      Older
@@ -194,12 +196,12 @@ Creates a new categorical variable that groups patients based on age.
 ---
 
 ## 📊 9. Summary Statistics
-
+**Write the code in the Editor:**  
 ```r
 Data %>%
   summarise(mean_age = mean(Age, na.rm = TRUE))
 ```
-
+**Output:**   
 ```
   mean_age
 1 65.23371
@@ -211,13 +213,13 @@ Calculates the overall average age of patients in the dataset.
 ---
 
 ## 📊 10. Group-wise Summary
-
+**Write the code in the Editor:**  
 ```r
 Data %>%
   group_by(Gender) %>%
   summarise(mean_age = mean(Age, na.rm = TRUE))
 ```
-
+**Output:**   
 ```
 # A tibble: 2 × 2
   Gender mean_age
