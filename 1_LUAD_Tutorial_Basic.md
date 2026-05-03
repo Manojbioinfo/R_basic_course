@@ -25,6 +25,8 @@ Place the file in your R working directory before proceeding.
 
 ## 📌 3. Workspace Preparation  
 
+**Write the code in the Editor:**  
+
 ```r
 # Clear workspace
 rm(list = ls())
@@ -37,6 +39,7 @@ This ensures a clean working environment and avoids conflicts with previously st
 
 ## 📦 4. Load Required Libraries  
 
+**Write the code in the Editor:**  
 ```r
 # Install (run once only)
 # install.packages("tidyverse")
@@ -76,6 +79,7 @@ The “conflicts” message indicates that some functions (such as `filter()` an
 
 ## 📂 5. Load the Dataset  
 
+**Write the code in the Editor:**  
 ```r
 # Load dataset
 Data <- read.csv("LUAD_clean_data_all_patients.csv")
@@ -112,6 +116,7 @@ This step helps verify data quality before proceeding with analysis.
 
 ## 🔍 Inspecting the Dataset Structure
 
+**Write the code in the Editor:**  
 ```r
 # Inspect structure of the dataset
 str(Data)
@@ -142,6 +147,7 @@ Most categorical variables are currently stored as character type and should be 
 ---
 ## 🔍 Summary Statistics of the Dataset
 
+**Write the code in the Editor:**  
 ```r
 # Summary of the dataset
 summary(Data)
@@ -189,6 +195,7 @@ Before starting any analysis, it’s important to check if your dataset contains
 
 #### ▶️ Run the following code:
 
+**Write the code in the Editor:**  
 ```r
 # Check missing values in each column
 colSums(is.na(Data))
@@ -210,7 +217,9 @@ colSums(is.na(Data))
 - No need for data cleaning related to missing values
 
 
-## 📊 7. Descriptive Statistics  
+## 📊 7. Descriptive Statistics 
+
+**Write the code in the Editor:**  
 
 ```r
 # Mean age
@@ -221,6 +230,8 @@ mean(Data$Age)
 65.23371
 ```
 
+**Write the code in the Editor:**  
+
 
 ```r
 # Median age
@@ -230,6 +241,8 @@ median(Data$Age)
 ```
 66
 ```
+
+**Write the code in the Editor:**  
 
 
 ```r
@@ -242,6 +255,8 @@ table(Data$Gender)
 Female   Male 
    247    198 
 ```
+
+**Write the code in the Editor:**  
 
 ```r
 # Frequency tables of pathological stage
@@ -262,6 +277,9 @@ Descriptive statistics summarize the main characteristics of the dataset and hel
 
 ## 📈 8. Data Visualization  
 
+
+**Write the code in the Editor:**  
+
 ```r
 # Histogram of Age distribution
 hist(Data$Age,
@@ -272,6 +290,9 @@ hist(Data$Age,
 **Output:**  
 
 <img src="images/LUAD_Pic1.jpg" alt="Plot" width="60%">
+
+
+**Write the code in the Editor:**  
 
 ```r
 # Histogram of Cigarettes per day
@@ -286,6 +307,9 @@ hist(Data$Cigarettes_per_day,
 
 <img src="images/LUAD_Pic2.jpg" alt="Plot" width="60%">
 
+
+**Write the code in the Editor:**  
+
 ```r
 # Bar plots
 barplot(table(Data$Gender),
@@ -294,6 +318,10 @@ barplot(table(Data$Gender),
 ```
 
 <img src="images/LUAD_Pic3.jpg" alt="Plot" width="60%">
+
+
+**Write the code in the Editor:**  
+
 
 ```r
 barplot(table(Data$Tumor_Stage),
@@ -311,6 +339,9 @@ Visualizations provide an intuitive understanding of data patterns and distribut
 
 ## 📉 9. Relationship Analysis  
 
+
+**Write the code in the Editor:**  
+
 ```r
 # Scatter plot
 plot(Data$Age, Data$Smoking,
@@ -322,6 +353,8 @@ plot(Data$Age, Data$Smoking,
 
 <img src="images/LUAD_Pic5.jpg" alt="Plot" width="60%">
 
+
+**Write the code in the Editor:**  
 
 ```r
 # Regression line
@@ -336,6 +369,9 @@ This explores the relationship between age and smoking behavior, helping identif
 ---
 
 ## 📊 10. Correlation Analysis  
+
+
+**Write the code in the Editor:**  
 
 ```r
 cor(Data$Age, Data$Smoking, use = "complete.obs")
@@ -365,6 +401,8 @@ So:
 
 ## 📦 11. Boxplots  
 
+**Write the code in the Editor:**  
+
 ```r
 # Age by Tumor Stage
 boxplot(Age ~ Tumor_Stage, data = Data,
@@ -374,6 +412,9 @@ boxplot(Age ~ Tumor_Stage, data = Data,
 **Output:**  
 
 <img src="images/LUAD_Pic7.jpg" alt="Plot" width="60%">
+
+
+**Write the code in the Editor:**  
 
 
 ```r
@@ -393,6 +434,9 @@ Boxplots compare distributions across groups and help detect variability and out
 
 ## 💾 12. Saving Output  
 
+
+**Write the code in the Editor:**  
+
 ```r
 jpeg("luad_plot.jpg", width = 2000, height = 1500, res = 300)
 
@@ -410,6 +454,9 @@ This allows saving visual outputs for reports and presentations. The above plot 
 ---
 
 ## 🔧 13. Reproducibility  
+
+
+**Write the code in the Editor:**  
 
 ```r
 sessionInfo()
