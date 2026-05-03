@@ -364,6 +364,8 @@ boxplot(Age ~ Tumor_Stage, data = Data,
         col = "orange",
         main = "Age by Tumor Stage")
 ```
+<img src="images/LUAD_Pic7.jpg" alt="Plot" width="60%">
+
 
 ```r
 # Age by Race
@@ -371,6 +373,7 @@ boxplot(Age ~ Race, data = Data,
         col = "purple",
         main = "Age by Race")
 ```
+<img src="images/LUAD_Pic8.jpg" alt="Plot" width="60%">
 
 **Interpretation:**  
 Boxplots compare distributions across groups and help detect variability and outliers.
@@ -382,14 +385,16 @@ Boxplots compare distributions across groups and help detect variability and out
 ```r
 jpeg("luad_plot.jpg", width = 2000, height = 1500, res = 300)
 
-plot(Data$Age, Data$Smoking)
-abline(lm(Smoking ~ Age, data = Data), col = "red")
+boxplot(Age ~ Race, data = Data,
+        col = "purple",
+        main = "Age by Race")
 
 dev.off()
+
 ```
 
 **Interpretation:**  
-This allows saving visual outputs for reports and presentations.
+This allows saving visual outputs for reports and presentations. The above plot will be saved as luad_plot.jpg in the current working directory
 
 ---
 
