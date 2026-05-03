@@ -175,9 +175,19 @@ Keeps only relevant variables for focused analysis and reduces dataset complexit
 
 ```r
 Data <- Data %>%
-  mutate(Age_Group = ifelse(Age > 60, "Older", "Younger"))
+  mutate(Age_Group2 = ifelse(Age > 60, "Older", "Younger"))
+head(Data)
 ```
+```
+            ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group Age_Group2
+1 TCGA-55-A48X  63 Female European        Alive        Stage IIA          1.9726027     Young      Older
+2 TCGA-NJ-A55R  67   Male European        Alive         Stage IA          0.2739726       Old      Older
+3 TCGA-53-A4EZ  63   Male European        Alive        Stage IIA          2.1917808     Young      Older
+4 TCGA-44-6777  85 Female European         Dead         Stage IB          3.5068493       Old      Older
+5 TCGA-55-6982  79 Female European         Dead        Stage IIB          0.0000000       Old      Older
+6 TCGA-50-7109  60   Male European         Dead         Stage IA          6.5753425     Young    Younger
 
+```
 **Interpretation:**  
 Creates a new categorical variable that groups patients based on age.
 
@@ -188,6 +198,11 @@ Creates a new categorical variable that groups patients based on age.
 ```r
 Data %>%
   summarise(mean_age = mean(Age, na.rm = TRUE))
+```
+
+```
+  mean_age
+1 65.23371
 ```
 
 **Interpretation:**  
@@ -201,6 +216,14 @@ Calculates the overall average age of patients in the dataset.
 Data %>%
   group_by(Gender) %>%
   summarise(mean_age = mean(Age, na.rm = TRUE))
+```
+
+```
+# A tibble: 2 × 2
+  Gender mean_age
+  <chr>     <dbl>
+1 Female     65.3
+2 Male       65.1
 ```
 
 **Interpretation:**  
