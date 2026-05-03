@@ -233,7 +233,7 @@ median(Data$Age)
 
 
 ```r
-# Frequency tables
+# Frequency tables of gender 
 table(Data$Gender)
 ```
 
@@ -244,7 +244,7 @@ Female   Male
 ```
 
 ```r
-# Frequency tables
+# Frequency tables of pathological stage
 table(Data$Pathologic_stage)
 ```
 
