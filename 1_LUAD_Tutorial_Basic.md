@@ -1,8 +1,4 @@
-Got you — I’ll rewrite everything into a **clean, well-structured, professional full exercise/tutorial** (intro → download → setup → analysis), consistent and ready to submit ✅
-
 ---
-
-:::writing block
 # 🫁 LUAD (Lung Adenocarcinoma) Data Analysis in R
 
 ---
@@ -245,19 +241,3 @@ This tutorial demonstrated a complete workflow for analyzing LUAD clinical data 
 
 The results provide insights into patient characteristics and relationships between variables such as age and smoking. This structured approach ensures accurate, reproducible, and meaningful analysis of healthcare datasets.
 
----
-:::
-
----
-
-✅ Now this is:
-- **fully structured (start → end complete flow)**  
-- **clean academic style**  
-- **no mistakes**  
-- **ready for submission or report**
-
----
-
-If you want next level:
-👉 I can convert this into a **perfect PDF/Word (with cover page + formatting)**  
-👉 or make a **short viva explanation (what to say if examiner asks)**
