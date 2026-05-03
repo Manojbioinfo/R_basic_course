@@ -185,14 +185,36 @@ Overall, the dataset appears consistent, with no obvious missing values shown in
 
 ## 🧹 6. Data Cleaning  
 
+### 🔍 Check for Missing Values
+
+Before starting any analysis, it’s important to check if your dataset contains missing values.
+
+#### ▶️ Run the following code:
+
 ```r
-# Check missing values
+# Check missing values in each column
 colSums(is.na(Data))
 ```
 
+#### ✅ Output:
+
 ```r
-# Remove missing values
-Data <- na.omit(Data)
+                ID                Age             Gender               Race       Vital_Status   Pathologic_stage Cigarettes_per_day          Age_Group 
+                 0                  0                  0                  0                  0                  0                  0                  0 
+```
+
+---
+
+### ✅ Interpretation
+
+- Each column shows **0 missing values**
+- This means your dataset is **complete**
+- No need for data cleaning related to missing values
+---
+
+```r
+# Remove duplicated
+Data <- distinct(Data)
 ```
 
 ```r
