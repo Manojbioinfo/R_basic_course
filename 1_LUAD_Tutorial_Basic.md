@@ -102,14 +102,46 @@ summary(Data)
 6 TCGA-55-6982  79 Female European         Dead        Stage IIB          0.0000000       Old
 ```
 
+
+
+
+
+Nice — now you can present this much more professionally in your report like this ✅
+
+---
+
+:::writing block
+## 🔍 Inspecting the Dataset Structure
+
 ```r
-# Inspect data
+# Inspect structure of the dataset
 str(Data)
 ```
 
+**Output:**  
+```
+'data.frame': 579 obs. of  8 variables:
+ $ ID                 : chr  "TCGA-55-A48X" "TCGA-NJ-A55R" ...
+ $ Age                : int  63 67 63 85 ...
+ $ Gender             : chr  "Female" "Male" ...
+ $ Race               : chr  "European" "European" ...
+ $ Vital_Status       : chr  "Alive" "Alive" ...
+ $ Pathologic_stage   : chr  "Stage IIA" "Stage IA" ...
+ $ Cigarettes_per_day : num  1.973 0.274 2.192 ...
+ $ Age_Group          : chr  "Young" "Old" ...
 ```
 
-```
+**Interpretation:**  
+The dataset contains **579 observations and 8 variables**.  
+
+- **Numerical variables:** Age, Cigarettes_per_day  
+- **Categorical variables:** Gender, Race, Vital_Status, Pathologic_stage, Age_Group  
+- **Identifier variable:** ID  
+
+Most categorical variables are currently stored as character type and should be converted to factors for proper analysis. The dataset appears clean and suitable for further statistical analysis.
+
+---
+
 ```r
 # Inspect data
 summary(Data)
