@@ -142,20 +142,44 @@ The dataset contains **579 observations and 8 variables**.
 Most categorical variables are currently stored as character type and should be converted to factors for proper analysis. The dataset appears clean and suitable for further statistical analysis.
 
 ---
+## 🔍 Summary Statistics of the Dataset
 
 ```r
-# Inspect data
+# Summary of the dataset
 summary(Data)
 ```
 
+**Output:**  
 ```
-
+      ID                 Age          Gender              Race           Vital_Status       Pathologic_stage  
+ Length:579         Min.   :33.0   Length:579         Length:579         Length:579         Length:579        
+ Class :character   1st Qu.:59.0   Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Median :66.0   Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                    Mean   :65.2                                                                              
+                    3rd Qu.:72.0                                                                              
+                    Max.   :88.0                                                                              
+ Cigarettes_per_day  Age_Group        
+ Min.   :0.000      Length:579        
+ 1st Qu.:0.000      Class :character  
+ Median :1.096      Mode  :character  
+ Mean   :1.512                        
+ 3rd Qu.:2.466                        
+ Max.   :8.438       
 ```
-
-
 
 **Interpretation:**  
-These functions help understand the dataset structure, variable types, and summary statistics.
+The `summary()` function provides an overview of both numerical and categorical variables in the dataset.
+
+- **Age:**  
+  The average age is **65.2 years**, with values ranging from **33 to 88 years**. The median age (66) is close to the mean, suggesting a fairly symmetric distribution.
+
+- **Cigarettes per day:**  
+  The mean is **1.51**, while the median is **1.10**, indicating a slightly right-skewed distribution. A minimum of 0 suggests that some individuals do not smoke.
+
+- **Categorical variables (Gender, Race, Vital_Status, Pathologic_stage, Age_Group):**  
+  These are currently stored as character variables and summarized by their length rather than frequencies, indicating the need for conversion to factors for better analysis.
+
+Overall, the dataset appears consistent, with no obvious missing values shown in the summary, and is suitable for further statistical analysis after minor preprocessing.
 
 ---
 
