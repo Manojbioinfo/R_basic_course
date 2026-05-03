@@ -25,6 +25,11 @@ Data <- read.csv("LUAD_clean_data_all_patients.csv")
 head(Data)
 ```
 
+```
+
+```
+
+
 **Interpretation:**  
 Displays the first few rows of the dataset to understand variable layout and sample values.  
 Helps confirm correct data loading and detect any obvious issues.
