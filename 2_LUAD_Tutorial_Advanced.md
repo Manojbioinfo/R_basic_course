@@ -1,4 +1,3 @@
----
 
 # 🫁 LUAD Data Manipulation using dplyr (Basic Tutorial)
 
@@ -20,7 +19,29 @@ Data <- read.csv("LUAD_clean_data_all_patients.csv")
 
 ---
 
-## 🔍 3. Filter Data (Only Female Patients)
+## 🔍 3. Explore Dataset
+
+```r
+head(Data)
+```
+
+**Interpretation:**  
+Displays the first few rows of the dataset to understand variable layout and sample values.  
+Helps confirm correct data loading and detect any obvious issues.
+
+---
+
+```r
+str(Data)
+```
+
+**Interpretation:**  
+Shows the structure of the dataset, including variable types and number of observations.  
+Reveals that categorical variables are stored as character and may require conversion to factors.
+
+---
+
+## 🔍 4. Filter Data (Only Female Patients)
 
 ```r
 female_data <- Data %>%
@@ -28,11 +49,32 @@ female_data <- Data %>%
 ```
 
 **Interpretation:**  
-This extracts only female patients from the dataset.
+This extracts only female patients from the dataset for subgroup analysis.
 
 ---
 
-## 🔢 4. Arrange Data (Sort by Age)
+## 🔍 5. Explore Female Dataset
+
+```r
+head(female_data)
+```
+
+**Interpretation:**  
+Displays the first few rows of the female-only dataset to verify successful filtering.
+
+---
+
+```r
+str(female_data)
+```
+
+**Interpretation:**  
+Shows the structure of the filtered dataset and allows comparison with the full dataset.  
+This helps identify differences in sample size and confirms that variables remain consistent.
+
+---
+
+## 🔢 6. Arrange Data (Sort by Age)
 
 ```r
 sorted_data <- Data %>%
@@ -40,23 +82,23 @@ sorted_data <- Data %>%
 ```
 
 **Interpretation:**  
-This sorts the dataset in ascending order of age.
+Sorts the dataset in ascending order of age, making it easier to identify youngest and oldest patients.
 
 ---
 
-## 🎯 5. Select Specific Columns
+## 🎯 7. Select Specific Columns
 
 ```r
 selected_data <- Data %>%
-  select(Age, Gender, Tumor_Stage)
+  select(Age, Gender, Pathologic_stage)
 ```
 
 **Interpretation:**  
-This keeps only important variables for focused analysis.
+Keeps only relevant variables for focused analysis and reduces dataset complexity.
 
 ---
 
-## ➕ 6. Create New Variable (Mutate)
+## ➕ 8. Create New Variable (Mutate)
 
 ```r
 Data <- Data %>%
@@ -64,11 +106,11 @@ Data <- Data %>%
 ```
 
 **Interpretation:**  
-This creates a new variable grouping patients by age.
+Creates a new categorical variable that groups patients based on age.
 
 ---
 
-## 📊 7. Summary Statistics (Summarise)
+## 📊 9. Summary Statistics
 
 ```r
 Data %>%
@@ -76,11 +118,11 @@ Data %>%
 ```
 
 **Interpretation:**  
-This calculates the average age of patients.
+Calculates the overall average age of patients in the dataset.
 
 ---
 
-## 📊 8. Group-wise Summary
+## 📊 10. Group-wise Summary
 
 ```r
 Data %>%
@@ -89,10 +131,11 @@ Data %>%
 ```
 
 **Interpretation:**  
-This calculates the average age separately for each gender group.
+Calculates the mean age separately for male and female patients, enabling comparison between groups.
 
 ---
 
 ## ✅ Conclusion  
-This tutorial demonstrated basic data manipulation using the dplyr package, including filtering, sorting, selecting variables, creating new variables, and summarizing data. These functions are essential for efficient data handling in R.
 
+This tutorial demonstrated basic data manipulation using the **dplyr** package, including filtering, sorting, selecting variables, creating new variables, and summarizing data.  
+Additionally, comparing the full dataset with the female subset helps in understanding subgroup-specific patterns, which is important in healthcare data analysis.
