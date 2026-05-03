@@ -45,8 +45,32 @@ This ensures a clean working environment and avoids conflicts with previously st
 library(tidyverse)
 ```
 
+
+Below message is **automatically printed by R when you load tidyverse**. 
+
+
+```
+── Attaching core tidyverse packages ───────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.2.1     ✔ readr     2.2.0
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.2     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.1     
+
+── Conflicts ───────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package to force all conflicts to become errors
+```
+
+
 **Interpretation:**  
 The tidyverse package provides tools for data manipulation, analysis, and visualization.
+
+This output confirms that the tidyverse package and its core components have been successfully loaded.  
+
+The “conflicts” message indicates that some functions (such as `filter()` and `lag()`) from dplyr override functions with the same name from base R (stats package). This is normal and does not cause errors in most analyses.
+
 
 ---
 
@@ -57,12 +81,45 @@ The tidyverse package provides tools for data manipulation, analysis, and visual
 Data <- read.csv("LUAD_clean_data_all_patients.csv")
 ```
 
+
+
+
 ```r
 # Inspect data
 head(Data)
 str(Data)
 summary(Data)
 ```
+
+```
+> head(Data)
+            ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group
+1 TCGA-55-A48X  63 Female European        Alive        Stage IIA          1.9726027     Young
+2 TCGA-NJ-A55R  67   Male European        Alive         Stage IA          0.2739726       Old
+3 TCGA-53-A4EZ  63   Male European        Alive        Stage IIA          2.1917808     Young
+4 TCGA-44-6777  85 Female European         Dead         Stage IB          3.5068493       Old
+5 TCGA-44-6777  85 Female European         Dead         Stage IB          3.5068493       Old
+6 TCGA-55-6982  79 Female European         Dead        Stage IIB          0.0000000       Old
+```
+
+```r
+# Inspect data
+str(Data)
+```
+
+```
+
+```
+```r
+# Inspect data
+summary(Data)
+```
+
+```
+
+```
+
+
 
 **Interpretation:**  
 These functions help understand the dataset structure, variable types, and summary statistics.
