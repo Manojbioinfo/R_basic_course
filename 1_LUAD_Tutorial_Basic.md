@@ -216,17 +216,44 @@ colSums(is.na(Data))
 # Mean age
 mean(Data$Age)
 ```
+#### ✅ Output:
+```
+65.23371
+```
+
 
 ```r
 # Median age
 median(Data$Age)
 ```
+#### ✅ Output:
+```
+66
+```
+
 
 ```r
 # Frequency tables
 table(Data$Gender)
-table(Data$Tumor_Stage)
 ```
+
+#### ✅ Output:
+```
+Female   Male 
+   247    198 
+```
+
+```r
+# Frequency tables
+table(Data$Pathologic_stage)
+```
+
+#### ✅ Output:
+```
+Stage I   Stage IA   Stage IB   Stage II  Stage IIA  Stage IIB Stage IIIA Stage IIIB   Stage IV 
+         5        130        113          1         48         58         62          7         21 
+```
+
 
 **Interpretation:**  
 Descriptive statistics summarize the main characteristics of the dataset and help understand distributions.
