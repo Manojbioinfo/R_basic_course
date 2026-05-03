@@ -322,6 +322,7 @@ plot(Data$Age, Data$Smoking,
 abline(lm(Smoking ~ Age, data = Data), col = "red")
 ```
 <img src="images/LUAD_Pic6.jpg" alt="Plot" width="60%">
+
 **Interpretation:** 
 
 This explores the relationship between age and smoking behavior, helping identify trends.
@@ -334,6 +335,10 @@ This explores the relationship between age and smoking behavior, helping identif
 cor(Data$Age, Data$Smoking, use = "complete.obs")
 ```
 
+```
+0.04594092
+```
+
 **Interpretation:**  
 Correlation measures the strength and direction of association between two numerical variables.  
 
@@ -342,6 +347,13 @@ Values range from -1 to +1:
 - Close to -1 → strong negative relationship  
 - Close to 0 → no relationship  
 
+Our result, i.e, 0.04594092 means:
+
+> As **age increases, cigarettes per day *very slightly* increase**, but the relationship is so weak that it’s basically **no real relationship at all**.
+
+So:
+
+> There is a negligible positive relationship between age and cigarettes per day, indicating essentially no meaningful association.
 ---
 
 ## 📦 11. Boxplots  
