@@ -193,7 +193,6 @@ Overall, the dataset appears consistent, with no obvious missing values shown in
 
 Before starting any analysis, it’s important to check if your dataset contains missing values.
 
-#### ▶️ Run the following code:
 
 **Write the code in the Editor:**  
 ```r
