@@ -91,13 +91,13 @@ head(Data)
 
 **Output:**  
 ```
-            ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group
+           ID Age Gender     Race Vital_Status Pathologic_stage Cigarettes_per_day Age_Group
 1 TCGA-55-A48X  63 Female European        Alive        Stage IIA          1.9726027     Young
 2 TCGA-NJ-A55R  67   Male European        Alive         Stage IA          0.2739726       Old
 3 TCGA-53-A4EZ  63   Male European        Alive        Stage IIA          2.1917808     Young
 4 TCGA-44-6777  85 Female European         Dead         Stage IB          3.5068493       Old
-5 TCGA-44-6777  85 Female European         Dead         Stage IB          3.5068493       Old
-6 TCGA-55-6982  79 Female European         Dead        Stage IIB          0.0000000       Old
+5 TCGA-55-6982  79 Female European         Dead        Stage IIB          0.0000000       Old
+6 TCGA-50-7109  60   Male European         Dead         Stage IA          6.5753425     Young
 ```
 
 **Interpretation:**  
@@ -106,8 +106,6 @@ The `head()` function displays the first six observations of the dataset, provid
 From this preview, we can confirm that:
 - The variables are properly organized and readable  
 - Both numerical and categorical data are present  
-- There appear to be **duplicate entries** (e.g., ID *TCGA-44-6777* appears twice), which may require further data cleaning  
-
 This step helps verify data quality before proceeding with analysis.
 
 ---
@@ -210,34 +208,7 @@ colSums(is.na(Data))
 - Each column shows **0 missing values**
 - This means your dataset is **complete**
 - No need for data cleaning related to missing values
----
 
-```r
-# Remove duplicated
-Data <- distinct(Data)
-```
-
-```r
-# Convert categorical variables to factors
-Data$Gender <- as.factor(Data$Gender)
-Data$Tumor_Stage <- as.factor(Data$Tumor_Stage)
-Data$Smoking_Status <- as.factor(Data$Smoking_Status)
-Data$Race <- as.factor(Data$Race)
-```
-
-```r
-# Verify structure
-str(Data)
-```
-
-**Interpretation:**  
-Cleaning ensures the dataset is accurate and ready for analysis. Missing values are removed to avoid bias.  
-
-Categorical variables (Gender, Tumor Stage, Smoking Status, Race) represent groups and are converted into factors so that R handles them correctly.  
-
-Numerical variables such as Age represent measurable quantities and remain numeric.
-
----
 
 ## 📊 7. Descriptive Statistics  
 
