@@ -194,7 +194,7 @@ Before starting any analysis, it’s important to check if your dataset contains
 colSums(is.na(Data))
 ```
 
-#### ✅ Output:
+**Output:**  
 
 ```r
                 ID                Age             Gender               Race       Vital_Status   Pathologic_stage Cigarettes_per_day          Age_Group 
@@ -216,7 +216,7 @@ colSums(is.na(Data))
 # Mean age
 mean(Data$Age)
 ```
-#### ✅ Output:
+**Output:**  
 ```
 65.23371
 ```
@@ -226,7 +226,7 @@ mean(Data$Age)
 # Median age
 median(Data$Age)
 ```
-#### ✅ Output:
+**Output:**  
 ```
 66
 ```
@@ -237,7 +237,7 @@ median(Data$Age)
 table(Data$Gender)
 ```
 
-#### ✅ Output:
+**Output:**  
 ```
 Female   Male 
    247    198 
@@ -248,7 +248,7 @@ Female   Male
 table(Data$Pathologic_stage)
 ```
 
-#### ✅ Output:
+**Output:**  
 ```
 Stage I   Stage IA   Stage IB   Stage II  Stage IIA  Stage IIB Stage IIIA Stage IIIB   Stage IV 
          5        130        113          1         48         58         62          7         21 
@@ -269,6 +269,7 @@ hist(Data$Age,
      main = "Age Distribution",
      xlab = "Age")
 ```
+**Output:**  
 
 <img src="images/LUAD_Pic1.jpg" alt="Plot" width="60%">
 
@@ -280,6 +281,8 @@ hist(Data$Cigarettes_per_day,
      xlab = "Cigarettes_per_day")
 
 ```
+
+**Output:**  
 
 <img src="images/LUAD_Pic2.jpg" alt="Plot" width="60%">
 
@@ -297,6 +300,7 @@ barplot(table(Data$Tumor_Stage),
         col = "lightgreen",
         main = "Tumor Stage Distribution")
 ```
+**Output:**  
 <img src="images/LUAD_Pic4.jpg" alt="Plot" width="60%">
 
 **Interpretation:**  
@@ -314,6 +318,8 @@ plot(Data$Age, Data$Smoking,
      ylab = "Cigarettes per Day",
      main = "Age vs Smoking")
 ```
+**Output:**  
+
 <img src="images/LUAD_Pic5.jpg" alt="Plot" width="60%">
 
 
@@ -334,6 +340,7 @@ This explores the relationship between age and smoking behavior, helping identif
 ```r
 cor(Data$Age, Data$Smoking, use = "complete.obs")
 ```
+**Output:**  
 
 ```
 0.04594092
@@ -364,6 +371,8 @@ boxplot(Age ~ Tumor_Stage, data = Data,
         col = "orange",
         main = "Age by Tumor Stage")
 ```
+**Output:**  
+
 <img src="images/LUAD_Pic7.jpg" alt="Plot" width="60%">
 
 
@@ -373,6 +382,8 @@ boxplot(Age ~ Race, data = Data,
         col = "purple",
         main = "Age by Race")
 ```
+**Output:**  
+
 <img src="images/LUAD_Pic8.jpg" alt="Plot" width="60%">
 
 **Interpretation:**  
@@ -404,7 +415,7 @@ This allows saving visual outputs for reports and presentations. The above plot 
 sessionInfo()
 ```
 
-#### ✅ Output:
+**Output:**  
 
 ```
 R version 4.5.2 (2025-10-31)
