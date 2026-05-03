@@ -263,12 +263,24 @@ Descriptive statistics summarize the main characteristics of the dataset and hel
 ## 📈 8. Data Visualization  
 
 ```r
-# Histogram
+# Histogram of Age distribution
 hist(Data$Age,
      col = "lightblue",
      main = "Age Distribution",
      xlab = "Age")
 ```
+
+
+```r
+# Histogram of Cigarettes per day
+hist(Data$Cigarettes_per_day,
+     col = "darkred",
+     main = "Age Distribution",
+     xlab = "Age")
+```
+
+
+
 
 ```r
 # Bar plots
