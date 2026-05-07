@@ -16,34 +16,32 @@ If you're new to R or need a refresher, these curated resources will help you ge
 ---
 
 ### 📘 Statistical Inference & Tidyverse Learning
-📖 Statistical Inference via Data Science: A ModernDive into R and the Tidyverse
+* 📖 Statistical Inference via Data Science: A ModernDive into R and the Tidyverse:  https://moderndive.com/
 
-https://moderndive.com/
+* 👉 Chapter on tidy data: https://moderndive.com/4-tidy.html
 
-👉 Chapter on tidy data: https://moderndive.com/4-tidy.html
+* 📦 Tidyverse Articles & Documentation:
 
-📦 Tidyverse Articles & Documentation
+* https://tidyverse.r-universe.dev/articles
 
-https://tidyverse.r-universe.dev/articles
+* https://tidyverse.org/learn/
 
-https://tidyverse.org/learn/
-
-https://r4ds.hadley.nz/data-tidy.html
+* https://r4ds.hadley.nz/data-tidy.html
 
 ---
 
 ### 📊 Data Visualization
-Advanced Data Visualization (LADAL):
+* Advanced Data Visualization (LADAL):
 https://ladal.edu.au/tutorials/data_viz_advanced/data_viz_advanced.html
 
-ggplot2: Elegant Graphics for Data Analysis (Book):
+* ggplot2: Elegant Graphics for Data Analysis (Book):
 https://ggplot2-book.org/
 
-R for Data Science – Data Visualization Chapter:
+* R for Data Science – Data Visualization Chapter:
 https://r4ds.had.co.nz/data-visualisation.html
 
-Data Visualization with R (Roger D. Peng & Robert Kabacoff resources):
+* Data Visualization with R (Roger D. Peng & Robert Kabacoff resources):
 https://rkabacoff.github.io/datavis/
 
-Bioinformatics Data Visualization with ggplot2:
+* Bioinformatics Data Visualization with ggplot2:
 https://bioinformatics.ccr.cancer.gov/docs/rintro_2023/DataVis_w_ggplot2/
